@@ -11,4 +11,13 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-})
+  server: {
+    proxy: {
+      "/api": {
+        target: "http://localhost:1337", // Your Strapi backend
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+  },
+});
