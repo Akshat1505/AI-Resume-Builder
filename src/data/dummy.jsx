@@ -65,12 +65,12 @@ export default{
         {
             id:1,
             name:'Angular',
-            rating:80,
+            rating:50,
         },
         {
             id:1,
             name:'React',
-            rating:100,
+            rating:60,
         },
         {
             id:1,
